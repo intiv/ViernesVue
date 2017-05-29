@@ -1,0 +1,11 @@
+{
+  "name": "primerviernes",
+  "version": "1.0.0",
+  "description": "testing mongo",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "MIT"
+}
