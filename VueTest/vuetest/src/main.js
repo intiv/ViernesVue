@@ -7,7 +7,12 @@ import VueRouter from 'vue-router'
 import Inti from './components/Inti.vue'
 import Hello from './components/Hello.vue'
 import Viktor from './components/Viktor.vue'
-Vue.use(VueRouter)
+import Pity from './components/Pity.vue'
+import VueResource from 'vue-resource'
+
+Vue.use(VueResource);
+Vue.use(VueRouter);
+
 const router = new VueRouter({
 	routes: [//arreglo de objetos
 		{//cada ruta es un objeto
@@ -24,6 +29,11 @@ const router = new VueRouter({
 			name: 'Viktor',
 			path : '/viktor',
 			component : Viktor
+		},
+		{
+			name: 'Pity',
+			path: '/books',
+			component: Pity
 		}
 	]
 })
