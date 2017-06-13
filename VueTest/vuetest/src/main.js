@@ -12,6 +12,7 @@ import VueResource from 'vue-resource'
 
 Vue.use(VueResource);
 Vue.use(VueRouter);
+Vue.http.options.credentials = true;
 
 const router = new VueRouter({
 	routes: [//arreglo de objetos
