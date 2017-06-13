@@ -8,11 +8,14 @@ var server = new hapi.Server();
 server.connection({
     port: ~~process.env.PORT || 8000,
     routes: { 
-      cors: true
+      cors: {
+        credentials: true,
+        origin: ["*"]
+      }
     }
 });
 
-mongoose.connect('mongodb://localhost:27017/prueba');
+mongoose.connect('mongodb://localhost:27017/pruebaLogin');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
